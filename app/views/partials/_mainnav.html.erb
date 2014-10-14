@@ -1,0 +1,17 @@
+<nav id="nav">
+	<%if ((params[:controller])=='works')%>
+		<ul>
+			<li ><a href="/#main">Services</a></li>
+			<li class="current"><a href="#work" class="scrolly">Work</a></li>
+			<li ><a href="#contact" class="scrolly">Contact</a></li>
+		</ul>
+	<%else%>
+
+		<ul>
+			<li ><a href="#main" class="scrolly">Services</a></li>
+			<li ><a href="#work" class="scrolly">Work</a></li>
+			<li ><a href="#contact" class="scrolly">Contact</a></li>
+		</ul>
+
+	<%end%>
+</nav>

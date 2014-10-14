@@ -13,6 +13,8 @@ module ApplicationHelper
 	def front
 		 return current_page?('/')
 	end
+
+	
 			
 
 

@@ -1,13 +1,7 @@
 <header id="header" class="alt">
 	<div class="container">
 		<h1 id="logo"><a href="/"><img src="<%= asset_path('gfp-studio-logo.svg') %>"></span></a></h1>
-		<nav id="nav">
-			<ul>
-				<li class="current "><a href="#main" class="scrolly">Services</a></li>
-				<li ><a href="#work" class="scrolly">Work</a></li>
-				<li ><a href="#contact" class="scrolly">Contact</a></li>
-			</ul>
-		</nav>
+		<%= render "partials/mainnav" %>
 	</div>
 </header>
 
