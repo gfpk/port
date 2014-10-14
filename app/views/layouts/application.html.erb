@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <%= javascript_include_tag 'application'%>
+  <%= stylesheet_link_tag    'application'%>
+
+  <noscript>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-noscript.css" />
+  </noscript>
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700|Arvo' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+</head>
+<body class='<%= controller.controller_name %>  <%= controller.action_name %> ' >
+
+<%= render "partials/header"%>
+
+<div id="main">
+	<%= yield %>
+</div>
+
+<%= render "partials/footer"%>
+
+</body>
+</html>
