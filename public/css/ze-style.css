@@ -1246,7 +1246,7 @@
 		    padding: 5em 0;
 		    text-align: left;
 		}
-		.work-page.not-front #banner {
+		.works.not-front #banner {
 		    background: url("images/header-bg-work.jpg") repeat scroll center top / cover rgba(0, 0, 0, 0);
 		    padding: 4em 0 2em;
 		    text-align: left;
@@ -1256,7 +1256,7 @@
 			text-align: left;
 			padding:2em 0 0 0;
 		}
-		.work-page.not-front #banner .inner
+		.works.not-front #banner .inner
 		{
 			text-align: left;
 			padding:1em 0 0 0;

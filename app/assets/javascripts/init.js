@@ -181,9 +181,9 @@ $( document ).ready(function() {
     };
  
     slideRotator.init();
-    $("#banner").css("height", (($(window).height()-70)+"px"));
+    $(".front #banner").css("height", (($(window).height()-70)+"px"));
      $(window).resize(function(){
-    	$("#banner").css("height", (($(window).height()-70)+"px"));
+    	$(".front #banner").css("height", (($(window).height()-70)+"px"));
     });
 });
 
