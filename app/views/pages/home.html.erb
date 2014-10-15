@@ -1,1 +1,98 @@
-<h1>Hello Home</h1>
+
+				<!-- Two -->
+					<section class="wrapper style1 container special">
+						<div class="row" id ="triptich">
+							<div class="4u">
+							
+								<section>
+									<img src="css/images/graphic-design.png">
+									<header>
+										 <h3>Graphic Design</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+								</section>
+							
+							</div>
+							<div class="4u">
+							
+								<section>
+									<img src="css/images/web-design.png">
+									<header>
+										<h3>Web Design</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+								</section>
+							
+							</div>
+							<div class="4u">
+							
+								<section>
+									<img src="css/images/web-development.png">
+									<header>
+										<h3>Web Development</h3>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+									<span id="work"></span>
+								</section>
+							
+							</div>
+						</div>
+					</section>
+<!-- PORTFOLIO -->
+					<section class=" container">
+					
+						<header class="proj">
+							<h2>PROJECTS</h2>
+						</header>
+
+						
+						<div class="row">
+							<% @works.each_slice(2) do |i| %>
+
+								<div class="row">
+									<% i.each do |work| %>
+
+									<div class="6u port-item">
+							
+										<section>
+											<%= link_to(work, :class=>"image feature") do %>
+												<%= image_tag work.main_image_url %>
+											<%end%>
+											<a href="#" class="image feature"> </a>
+											<header>
+												<%= link_to work do %>
+													<h3><span class=""><%=work.name%></span></h3>
+												<i class="fa fa-external-link-square"></i>
+												<%end%>
+												
+												
+											</header>
+											
+										</section>
+
+									</div>
+
+										
+									<%end%>
+								</div>
+
+							<%end%>
+						</div>
+
+					      
+					   
+						
+						
+
+						</div>
+						
+
+						<footer class="major">
+							<ul class="buttons">
+								<li><a href="/works" class="button">ALL PROJECTS</a></li>
+							</ul>
+						</footer>
+					<p></p>
+					</section>
+
+				

@@ -185,6 +185,22 @@ $( document ).ready(function() {
      $(window).resize(function(){
     	$(".front #banner").css("height", (($(window).height()-70)+"px"));
     });
+
+     var navTrack = {
+     	init:function(){
+     		var links = $(".front #nav a");
+
+     		links.on('click', function(){
+     			links.closest('li').removeClass('current');
+     			$(this).closest('li').addClass('current');
+
+     		});
+
+     	}
+     };
+
+    navTrack.init();
+
 });
 
 })(jQuery);

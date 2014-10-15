@@ -177,7 +177,7 @@
 	}
 
 	footer.major {
-		padding-top: 3em;
+		padding-bottom: 3em;
 		text-align: center;
 	}
 
@@ -259,7 +259,7 @@
 		.image:before {
 			
 
-			background-image: url("project-dot-overlay.png");
+			background-image: url("images/project-dot-overlay.png");
 			content: '';
 			height: 100%;
 			left: 0;
@@ -1249,6 +1249,11 @@
 		.works.not-front #banner {
 		    background: url("images/header-bg-work.jpg") repeat scroll center top / cover rgba(0, 0, 0, 0);
 		    padding: 4em 0 2em;
+		    text-align: left;
+		}
+		.works.not-front.show #banner {
+		    background: url("images/header-bg-work.jpg") repeat scroll center top / cover rgba(0, 0, 0, 0);
+		    padding: 5em 0;
 		    text-align: left;
 		}
 		.not-front #banner .inner
