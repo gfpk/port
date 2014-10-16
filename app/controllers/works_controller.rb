@@ -10,11 +10,6 @@ class WorksController < ApplicationController
   # GET /works/1
   # GET /works/1.json
   def show
-    if Work.where(id:(@work.id+1)) 
-      @next_work=Work.find(id:(@work.id+1)) 
-    else
-      (@next_work=nil)
-    end
   end
 
   # GET /works/new
@@ -70,6 +65,18 @@ class WorksController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_work
       @work = Work.find(params[:id])
+
+      if Work.exists?((@work.id.to_i)+1) 
+        @next_work=Work.find((@work.id.to_i)+1)
+      else
+         @next_work =nil
+      end
+
+      if Work.exists?((@work.id.to_i)-1) 
+        @prev_work=Work.find((@work.id.to_i)-1)
+      else
+         @prev_work =nil
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

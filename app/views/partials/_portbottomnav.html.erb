@@ -20,6 +20,7 @@
 		</div>
 		<%end%>
 
+		<%if @next_work!=nil %>
 		<div class="6u port-item">Next <br>
 			<section>
 				<a href="<%=@next_work.id%>" class="image feature"><img src="<%=@next_work.main_image%>" alt="" /></a>
@@ -31,6 +32,7 @@
 				
 			</section>
 		</div>
+		<%end%>
 	</div>
 		
 </div>
