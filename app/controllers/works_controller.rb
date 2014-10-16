@@ -10,6 +10,11 @@ class WorksController < ApplicationController
   # GET /works/1
   # GET /works/1.json
   def show
+    if Work.where(id:(@work.id+1)) 
+      @next_work=Work.find(id:(@work.id+1)) 
+    else
+      (@next_work=nil)
+    end
   end
 
   # GET /works/new

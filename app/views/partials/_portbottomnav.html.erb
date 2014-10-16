@@ -1,0 +1,50 @@
+<div class="container">
+<div class="row ">
+		
+<div class="-2u 8u ">
+
+<hr>
+	<div class="row">
+		<%if @prev_work!=nil %>
+		<div class="6u port-item">Prev<br>
+			<section>
+				
+				<a href="<%=@prev_work.id%>" class="image feature"><img src="<%=@prev_work.main_image%>" alt="" /></a>
+				<header>
+					<a href="<%=@prev_work.id%>"><h3><span class=""><%=@prev_work.name%></span></h3>
+						<i class="fa fa-external-link-square"></i>
+					</a>
+				</header>
+				
+			</section>
+		</div>
+		<%end%>
+
+		<div class="6u port-item">Next <br>
+			<section>
+				<a href="<%=@next_work.id%>" class="image feature"><img src="<%=@next_work.main_image%>" alt="" /></a>
+				<header>
+					<a href="<%=@next_work.id%>"><h3><span class=""><%=@next_work.name%></span></h3>
+						<i class="fa fa-external-link-square"></i>
+					</a>
+				</header>
+				
+			</section>
+		</div>
+	</div>
+		
+</div>
+
+
+</div>
+
+</section>
+</div >
+
+<div class="container">
+	<footer class="major">
+		<ul class="buttons">
+			<li><a href="/works" class="button">ALL PROJECTS</a></li>
+		</ul>
+	</footer>
+</div>
