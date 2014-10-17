@@ -10,6 +10,50 @@
 
 /* Basic */
 
+
+label input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+.upload label, input[type="submit"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid;
+    color: inherit;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 0.8em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-width: 14em;
+    padding: 0.75em 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:all 0.2s linear;
+    cursor: pointer;
+}
+.upload label {
+    background: none repeat scroll 0 0 #FFDF00;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 15px;
+
+}
+.actions input[type="submit"]
+{
+	background: none repeat scroll 0 0 #7DDEFA;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.upload label:hover {
+    opacity: 0.7
+}
+.upload label:active {
+    opacity: 0.7
+}
+
+
 	body, #skel-layers-wrapper {
 		background: #fefefe;
 	}
@@ -847,8 +891,9 @@
 		/*background-image: url("dark-tl.svg"), url("dark-tr.svg"), url("dark-bl.svg"), url("dark-br.svg");
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
-		background-size: 25em;*/
-		padding: 3em 0;
+		background-size: 25em;
+		padding: 3em 0;*/
+		position: relative;
 	}
 
 		#main > :last-child {
@@ -1396,4 +1441,6 @@
 			color: #007BA8;
 			border: none;
 		}
-		
+		.adminlinks div {
+		    text-align: center;
+		}

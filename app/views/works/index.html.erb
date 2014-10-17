@@ -1,29 +1,63 @@
-<h1>Listing works</h1>
+<section class=" container">
+          
+            <header class="proj">
+              <h2>PROJECTS</h2>
+            </header>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Index</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+            
+            <div class="row">
+              <% @works.each_slice(2) do |i| %>
 
-  <tbody>
-    <% @works.each do |work| %>
-      <tr>
-        <td><%= work.name %></td>
-        <td><%= work.index %></td>
-        <td><%= work.body %></td>
-        <td><%= link_to 'Show', work %></td>
-        <td><%= link_to 'Edit', edit_work_path(work) %></td>
-        <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+                <div class="row">
+                  <% i.each do |work| %>
 
-<br>
+                  <div class="6u port-item">
+              
+                    <section>
+                      <%= link_to(work, :class=>"image feature") do %>
+                        <%= image_tag work.main_image_url %>
+                      <%end%>
+                      <a href="#" class="image feature"> </a>
+                      <header>
+                        <%= link_to work do %>
+                          <h3><span class=""><%=work.name%></span></h3>
+                        <i class="fa fa-external-link-square"></i>
+                        <%end%>
+                        
+                        
+                      </header>
+                      
+                      <%= link_to 'Show', work %>
+                      <%= link_to 'Edit', edit_work_path(work) %>
+                      <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
+                      
+                    </section>
 
-<%= link_to 'New Work', new_work_path %>
+                  </div>
+
+                    
+                  <%end%>
+                </div>
+
+              <%end%>
+            </div>
+
+                
+             
+            
+            
+
+            </div>
+            
+
+            <footer class="major">
+              <ul class="buttons">
+                <li><%= link_to 'New Work', new_work_path, :class=>"button" %></li>
+              </ul>
+            </footer>
+          <p></p>
+          </section>
+        
+     
+
+
