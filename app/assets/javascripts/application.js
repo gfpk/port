@@ -10,11 +10,8 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery.min.js
-//= require jquery.dropotron.min.js
-//= require skel.min.js
-//= require skel-layers.min.js
-//= require turbolinks
-//= require init.js
+//= require jquery
+//= require jquery_ujs
+
 
 //= require_tree .

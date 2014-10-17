@@ -1266,7 +1266,7 @@
 			text-align: left;
 			padding:1em 0 0 0;
 		}
-		.works.show header h1
+		h1.proj-title
 		{
 			font-size: 2em;
 		}

@@ -1,13 +1,11 @@
-<section id="banner" style="background-image:url('<%=Work.find(params[:id]).head_image%>')">
+<section id="banner" <%if !(params[:action] == "new")%>style="background-image:url('<%=@work.head_image%>')"<%end%>>
 
-<h1></h1>
-
-				
 <div class="container">
 	<div class="inner">
 
-		<h2 id="jumbotext"> &nbsp</h2>
-		<p> &nbsp</p>
+		<h1 class="proj-title"> <%=@work.name%></h1>
+
+		
 
 	</div>
 </div>
