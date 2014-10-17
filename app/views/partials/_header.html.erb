@@ -13,8 +13,10 @@
 	<%= render "partials/headers/homehead" %>
 <%elsif current_page?('/works')%>
 	<%= render "partials/headers/workhead" %>
-<%else%>
+<%elsif  ((params[:action] == "show") && ((params[:controller] == "works")))%>
 	<%= render "partials/headers/workitemhead" %>
+<%else%>
+	<%= render "partials/headers/elsehead" %>
 <% end %>
 
 			
