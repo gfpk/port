@@ -913,7 +913,7 @@ label input[type="file"] {
 			}
 
 	body.index #main {
-		padding-top: 5em;
+		padding-top: 3em;
 	}
 
 /* CTA */
@@ -1327,9 +1327,18 @@ label input[type="file"] {
 		ul.horisontal li {
 		    float: left;
 		    height: 70px;
-		    margin: 10px;
+		    margin: 5px;
 		    padding: 2px;
 		    width: 70px;
+		}
+		.badges.horisontal.cf {
+		    display: block;
+		    margin: 0 auto;
+		    position: relative;
+		    top: -40px;
+		}
+		ul.horisontal.badges li img{
+		    max-width: 100%;
 		}
 		.cf:before,
 		.cf:after {

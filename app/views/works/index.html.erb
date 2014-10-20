@@ -1,8 +1,6 @@
 <section class=" container">
           
-            <header class="proj">
-              <h2>PROJECTS</h2>
-            </header>
+            
 
             
             <div class="row">
@@ -26,11 +24,11 @@
                         
                         
                       </header>
-                      
-                      <%= link_to 'Show', work %>
-                      <%= link_to 'Edit', edit_work_path(work) %>
-                      <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
-                      
+                        <% if user_signed_in? %>
+                        <%= link_to 'Show', work %>
+                        <%= link_to 'Edit', edit_work_path(work) %>
+                        <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
+                      <%end%>
                     </section>
 
                   </div>
@@ -49,13 +47,16 @@
 
             </div>
             
-
+            <% if user_signed_in? %>
             <footer class="major">
               <ul class="buttons">
                 <li><%= link_to 'New Work', new_work_path, :class=>"button" %></li>
               </ul>
             </footer>
+            <% else %>
+          <p></p><br>
           <p></p>
+          <%end%>
           </section>
         
      
