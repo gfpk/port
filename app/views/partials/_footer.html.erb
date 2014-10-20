@@ -57,6 +57,14 @@
 					<div class="row">
 						<p></p>
 						<span class="copyright 12u"><span class="accent-azul">&copy; GFP Studio. All rights reserved. 2011-<%= Time.now.year %></span></span>
+						<% if user_signed_in? %>
+  <p>Welcome <%= current_user.email %></p>
+  <%= link_to 'Logged In [click to logout]', destroy_user_session_path, :method => :delete %>
+<% else %>
+  <p>You are not signed in.</p>
+  <%= link_to 'Login', new_user_session_path %>
+<% end %>
 					</div>
 					</section>
+
 			</footer>

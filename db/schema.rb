@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141017144902) do
+ActiveRecord::Schema.define(version: 20141020134521) do
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -39,6 +39,11 @@ ActiveRecord::Schema.define(version: 20141017144902) do
     t.datetime "updated_at"
     t.string   "main_image"
     t.string   "head_image"
+    t.string   "public"
+    t.boolean  "gdesign"
+    t.boolean  "wdesign"
+    t.boolean  "wdevel"
+    t.boolean  "published"
   end
 
 end

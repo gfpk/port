@@ -17,6 +17,22 @@
       <%= f.text_field :name %>
     </div></p>
   <p><div class="field">
+      <%= f.label :gdesign, 'Graphic Design?' %><br>
+      <%= f.check_box :gdesign%>
+    </div></p>
+    <p><div class="field">
+      <%= f.label :wdesign, 'Web Design?' %><br>
+      <%= f.check_box :wdesign%>
+    </div></p>
+    <p><div class="field">
+      <%= f.label :wdevel, 'Web Development?' %><br>
+      <%= f.check_box :wdevel%>
+    </div></p>
+    <p><div class="field">
+      <%= f.label :published, 'Published?' %><br>
+      <%= f.check_box :published%>
+    </div></p>
+  <p><div class="field">
       <%= f.label :index %><br>
       <%= f.number_field :index %>
     </div></p>
