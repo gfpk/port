@@ -10,7 +10,9 @@
 
 /* Basic */
 
-
+.hidden{
+	display: none;
+}
 label input[type="file"] {
     position: fixed;
     top: -1000px;

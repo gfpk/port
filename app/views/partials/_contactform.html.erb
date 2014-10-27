@@ -1,0 +1,30 @@
+<%= simple_form_for @contact do |f| %>
+  <div class="row half no-collapse-1">
+    <div class="6u">
+      <%= f.input :name, :required => true %>
+    </div>
+    <div class="6u">
+      <%= f.input :email, :required => true %>
+    </div>
+  </div>
+  <div class="row half">
+    <div class="12u">
+     <%= f.input :subject, :required => true %>
+    </div>
+  </div>
+  <div class="row half">
+    <div class="12u">
+      <%= f.input :message, :as => :text, :required => true %>
+    </div>
+  </div>
+  <div class= "hidden">
+    <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+  </div>
+  <div class="row half">
+    <div class="12u">
+      <ul class="buttons">
+         <%= f.button :submit, 'Send message', :class=> "button special" %>
+      </ul>
+    </div>
+  </div>
+<%end%>
