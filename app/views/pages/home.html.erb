@@ -1,5 +1,6 @@
 
 				<!-- Two -->
+			</br>
 					<section class="wrapper style1 container special">
 						<div class="row" id ="triptich">
 							<div class="4u">
@@ -52,9 +53,9 @@
 								<div class="row">
 									<% i.each do |work| %>
 
-									<div class="6u port-item">
+									<div class="6u port-item ">
 							
-										<section>
+										<section class="<%=editable%>">
 											<%= link_to(work, :class=>"image feature") do %>
 												<%= image_tag work.main_image_url %>
 											<%end%>
@@ -63,10 +64,13 @@
 												<%= link_to work do %>
 													<h3><span class=""><%=work.name%></span></h3>
 												<i class="fa fa-external-link-square"></i>
-												<%end%>
-												
-												
+												<%end%>												
 											</header>
+											 <% if user_signed_in? %>
+					                          <%= link_to 'Show', work %>
+					                          <%= link_to 'Edit', edit_work_path(work) %>
+					                          <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
+					                        <%end%>
 											
 										</section>
 

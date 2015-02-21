@@ -1,4 +1,4 @@
-<%= simple_form_for @contact do |f| %>
+<%= simple_form_for Contact.new, remote:true do |f| %>
   <div class="row half no-collapse-1">
     <div class="6u">
       <%= f.input :name, :required => true %>
@@ -22,9 +22,8 @@
   </div>
   <div class="row half">
     <div class="12u">
-      <ul class="buttons">
-         <%= f.button :submit, 'Send message', :class=> "button special" %>
-      </ul>
+    </br>
+      <%= f.button :submit, 'Send message', :class=> "button special" %>
     </div>
   </div>
 <%end%>

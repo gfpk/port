@@ -11,7 +11,7 @@
 
                   <div class="6u port-item">
               
-                    <section>
+                    <section class="<%=editable%>">
                       <%= link_to(work, :class=>"image feature") do %>
                         <%= image_tag work.main_image_url %>
                       <%end%>
@@ -25,10 +25,10 @@
                         
                       </header>
                         <% if user_signed_in? %>
-                        <%= link_to 'Show', work %>
-                        <%= link_to 'Edit', edit_work_path(work) %>
-                        <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
-                      <%end%>
+                          <%= link_to 'Show', work %>
+                          <%= link_to 'Edit', edit_work_path(work) %>
+                          <%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %>
+                        <%end%>
                     </section>
 
                   </div>

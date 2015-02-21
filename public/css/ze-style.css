@@ -13,6 +13,9 @@
 .hidden{
 	display: none;
 }
+.editable:hover{
+	border: 1px dashed;
+}
 label input[type="file"] {
     position: fixed;
     top: -1000px;

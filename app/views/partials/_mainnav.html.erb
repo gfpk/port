@@ -2,7 +2,7 @@
 	<%if ((params[:controller])=='works')%>
 		<ul>
 			<li ><a href="/#main">Services</a></li>
-			<li class="current"><a href="#work" class="scrolly">Work</a></li>
+			<li class="current"><%= link_to "Work", works_path %></li>
 			<li ><a href="#contact" class="scrolly">Contact</a></li>
 		</ul>
 	<%else%>
