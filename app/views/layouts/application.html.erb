@@ -18,6 +18,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= bodyclass(controller)%>' >
+  <% flash.each do |key, value| %>
+  <div class="container noticewrap">  
+    <p id="notice"><%= notice %></p>
+  </div>
+<% end %>
+  
   
 <%= render "partials/header"%>
 

@@ -43,7 +43,7 @@ class WorksController < ApplicationController
   def update
     respond_to do |format|
       if @work.update(work_params)
-        format.html { redirect_to @work, notice: 'Work was successfully updated.' }
+        format.html { render :edit, notice: 'Work was successfully updated.' }
         format.json { render :show, status: :ok, location: @work }
       else
         format.html { render :edit }

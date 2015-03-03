@@ -14,7 +14,7 @@
 	<%end%>
 </div>
 
-<p id="notice"><%= notice %></p>
+
 <section>
 <%=raw @work.body%>
 </section>
@@ -24,7 +24,8 @@
 	<div>
 	
 	<%= link_to 'Edit', edit_work_path(@work) %> |
-	<%= link_to 'Back', works_path %>
+	<%= link_to 'Back', works_path %> |
+	<%= link_to 'Destroy', @work, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"accent-red" %>
 	</div>
 </div>
 <%end%>
