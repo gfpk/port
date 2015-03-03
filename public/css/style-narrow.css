@@ -70,6 +70,9 @@
 		background-size: 15em, 15em, auto, cover;
 		padding: 3em;
 	}
+	#main {
+    padding: 10px;
+}
 
 /* moblogo */
 	

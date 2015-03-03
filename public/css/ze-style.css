@@ -10,6 +10,12 @@
 
 /* Basic */
 
+
+.inner-box {
+    padding: 3em;
+   
+}
+
 .hidden{
 	display: none;
 }
@@ -1312,7 +1318,7 @@ label input[type="file"] {
 		}
 		.works.not-front.show #banner {
 		    background: url("images/header-bg-work.jpg") repeat scroll center top / cover rgba(0, 0, 0, 0);
-		    padding: 3em 0 2em;
+		    padding: 3em 1em 2em;
 		    text-align: left;
 		}
 		.not-front #banner .inner

@@ -71,6 +71,7 @@
 
 	#banner {
 		margin: 0;
+		
 	}
 
 /* Wrapper */
@@ -86,7 +87,7 @@
 /* Main */
 
 	#main {
-		padding:0;
+		padding:10px;
 	}
 
 		#main .sidebar {
