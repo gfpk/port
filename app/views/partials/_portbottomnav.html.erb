@@ -5,13 +5,13 @@
 
 <hr>
 	<div class="row">
-		<%if @prev_work!=nil %>
+		<%if @work.prev!=nil %>
 		<div class="6u port-item">Prev<br>
 			<section>
 				
-				<a href="<%=@prev_work.id%>" class="image feature"><img src="<%=@prev_work.main_image%>" alt="" /></a>
+				<a href="<%=@work.prev.id%>" class="image feature"><img src="<%=@work.prev.main_image%>" alt="" /></a>
 				<header>
-					<a href="<%=@prev_work.id%>"><h3><span class=""><%=@prev_work.name%></span></h3>
+					<a href="<%=@work.prev.id%>"><h3><span class=""><%=@work.prev.name%></span></h3>
 						<i class="fa fa-external-link-square"></i>
 					</a>
 				</header>
@@ -20,12 +20,12 @@
 		</div>
 		<%end%>
 
-		<%if @next_work!=nil %>
+		<%if @work.next!=nil %>
 		<div class="6u port-item">Next <br>
 			<section>
-				<a href="<%=@next_work.id%>" class="image feature"><img src="<%=@next_work.main_image%>" alt="" /></a>
+				<a href="<%=@work.next.id%>" class="image feature"><img src="<%=@work.next.main_image%>" alt="" /></a>
 				<header>
-					<a href="<%=@next_work.id%>"><h3><span class=""><%=@next_work.name%></span></h3>
+					<a href="<%=@work.next.id%>"><h3><span class=""><%=@work.next.name%></span></h3>
 						<i class="fa fa-external-link-square"></i>
 					</a>
 				</header>

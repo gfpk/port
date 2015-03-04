@@ -1,6 +1,7 @@
 class WorksController < ApplicationController
   before_action :set_work, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!, :except => [:show, :index]
+  skip_before_action :verify_authenticity_token
 
   # GET /works
   # GET /works.json
@@ -66,18 +67,6 @@ class WorksController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_work
       @work = Work.find(params[:id])
-
-      if Work.exists?((@work.id.to_i)+1) 
-        @next_work=Work.find((@work.id.to_i)+1)
-      else
-         @next_work =nil
-      end
-
-      if Work.exists?((@work.id.to_i)-1) 
-        @prev_work=Work.find((@work.id.to_i)-1)
-      else
-         @prev_work =nil
-      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
