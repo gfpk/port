@@ -10,6 +10,9 @@
 
 /* Basic */
 
+.works.show #content .row + .row > * {
+    padding: 0 0 0 50px;
+}
 
 .inner-box {
     padding: 2em;
