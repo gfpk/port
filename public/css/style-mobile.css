@@ -195,7 +195,7 @@
 		    border-bottom: 1px solid #da1d23;
 		    content: " ";
 		    display: block;
-		    margin: 0.1em auto;
+		    margin: 0.1em 0;
 		    text-align: left;
 		    width: 3em;
 		}
