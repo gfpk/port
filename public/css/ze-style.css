@@ -10,8 +10,12 @@
 
 /* Basic */
 
-.works.show #content .row + .row > * {
-    padding: 0 0 0 50px;
+
+#content .row + .row > * {
+    padding: 6px 0 0 50px;
+}
+.padded{
+	padding: 20px;
 }
 
 .inner-box {
